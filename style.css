@@ -337,6 +337,23 @@ nav .fa
 {
     display: none;
 }
+
+.website-counter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.website-counter {
+    background-color: #080808;
+    height: 50px;
+    width: 80px;
+    color: white;
+    border-radius: 30px;
+    font-weight: 700;
+    font-size: 25px;
+    margin-top: 10px;
+}
 /*-----------------------------------------------css for small screens------------------------------------------------*/
 
 

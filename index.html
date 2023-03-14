@@ -203,6 +203,10 @@
             </div>
         </div>
     </div>
+    </div>
+    <p style="color: #fbb948"><strong>Visit Count :</strong></p>
+    <div class="website-counter btn btn2">00</div>
+    </div>
     <div class="copyright">
         <p>
             Copyright © ABANTEEKA. Made by ABANTEEKA ACHARYA.
@@ -255,6 +259,15 @@
             .catch(error => console.error('Error!', error.message))
     })
 </script>
-
+<script>
+    function updateCounter()
+    {
+        fetch("https://api.countapi.xyz/update/abanteeka.github.io/website/?amount=1")
+            .then(res => res.json())
+            .then(data => counterElement.innerHTML = data.value)
+    }
+    updateCounter()
+    counterElement = document.getElementsByClassName("website-counter")[0];
+</script>
 </body>
 </html>
